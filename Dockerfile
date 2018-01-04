@@ -34,7 +34,7 @@ COPY licenses /licenses
 COPY newrelic.ini /
 
 #Install the NewRelic Agent
-RUN pip install --upgrade pip && pip install newrelic
+RUN pip install newrelic
 
 #The agent needs to know where the INI file is
 ENV NEW_RELIC_CONFIG_FILE=/newrelic.ini
